@@ -1,0 +1,41 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyString
+  movement: MyString
+  reference: MyString
+  case_material: MyString
+  year: 1
+  case_diameter: 1.5
+  case_height: 1.5
+  lug_width: 1.5
+  description: MyText
+  retail_price: 
+  url: MyString
+  collection: MyString
+  dial_color: MyString
+  strap: MyString
+  buckle: MyString
+  numerals: MyString
+  water_resistance: MyString
+  glass: MyString
+
+two:
+  brand: MyString
+  movement: MyString
+  reference: MyString
+  case_material: MyString
+  year: 1
+  case_diameter: 1.5
+  case_height: 1.5
+  lug_width: 1.5
+  description: MyText
+  retail_price: 
+  url: MyString
+  collection: MyString
+  dial_color: MyString
+  strap: MyString
+  buckle: MyString
+  numerals: MyString
+  water_resistance: MyString
+  glass: MyString

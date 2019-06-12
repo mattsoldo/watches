@@ -1,0 +1,107 @@
+<%= form_with(model: watch, local: true) do |form| %>
+  <% if watch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(watch.errors.count, "error") %> prohibited this watch from being saved:</h2>
+
+      <ul>
+        <% watch.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :brand %>
+    <%= form.text_field :brand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :movement %>
+    <%= form.text_field :movement %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reference %>
+    <%= form.text_field :reference %>
+  </div>
+
+  <div class="field">
+    <%= form.label :case_material %>
+    <%= form.text_field :case_material %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :case_diameter %>
+    <%= form.text_field :case_diameter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :case_height %>
+    <%= form.text_field :case_height %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lug_width %>
+    <%= form.text_field :lug_width %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :retail_price %>
+    <%= form.text_field :retail_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :url %>
+    <%= form.text_field :url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :collection %>
+    <%= form.text_field :collection %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dial_color %>
+    <%= form.text_field :dial_color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :strap %>
+    <%= form.text_field :strap %>
+  </div>
+
+  <div class="field">
+    <%= form.label :buckle %>
+    <%= form.text_field :buckle %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numerals %>
+    <%= form.text_field :numerals %>
+  </div>
+
+  <div class="field">
+    <%= form.label :water_resistance %>
+    <%= form.text_field :water_resistance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :glass %>
+    <%= form.text_field :glass %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

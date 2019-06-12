@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Watches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Brand</th>
+      <th>Movement</th>
+      <th>Reference</th>
+      <th>Case material</th>
+      <th>Year</th>
+      <th>Case diameter</th>
+      <th>Case height</th>
+      <th>Lug width</th>
+      <th>Description</th>
+      <th>Retail price</th>
+      <th>Url</th>
+      <th>Collection</th>
+      <th>Dial color</th>
+      <th>Strap</th>
+      <th>Buckle</th>
+      <th>Numerals</th>
+      <th>Water resistance</th>
+      <th>Glass</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @watches.each do |watch| %>
+      <tr>
+        <td><%= watch.brand %></td>
+        <td><%= watch.movement %></td>
+        <td><%= watch.reference %></td>
+        <td><%= watch.case_material %></td>
+        <td><%= watch.year %></td>
+        <td><%= watch.case_diameter %></td>
+        <td><%= watch.case_height %></td>
+        <td><%= watch.lug_width %></td>
+        <td><%= watch.description %></td>
+        <td><%= watch.retail_price %></td>
+        <td><%= watch.url %></td>
+        <td><%= watch.collection %></td>
+        <td><%= watch.dial_color %></td>
+        <td><%= watch.strap %></td>
+        <td><%= watch.buckle %></td>
+        <td><%= watch.numerals %></td>
+        <td><%= watch.water_resistance %></td>
+        <td><%= watch.glass %></td>
+        <td><%= link_to 'Show', watch %></td>
+        <td><%= link_to 'Edit', edit_watch_path(watch) %></td>
+        <td><%= link_to 'Destroy', watch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Watch', new_watch_path %>
